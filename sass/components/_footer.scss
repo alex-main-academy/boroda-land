@@ -1,0 +1,27 @@
+.footer {
+    background-color: #04111f;
+    border-top: .1rem solid #3d7fc66a;
+    padding: 2rem 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        @media screen and (max-width:767px) {
+            gap: 2rem;
+        }
+    }
+}
+
+.footer__logo {
+    filter: brightness(1000%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+
+    @media screen and (max-width:767px) {
+        width: 8rem;
+    }
+}
+
+.footer__copy {
+    font-size: 1.4rem;
+}

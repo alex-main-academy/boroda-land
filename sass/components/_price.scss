@@ -1,0 +1,218 @@
+.price {
+    padding: 8rem 0;
+    background-color: #04111f;
+
+    @media screen and (max-width:1200px) {
+        padding: 6rem 0;
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 5rem 0;
+    }
+}
+
+.price__title {
+    margin-bottom: 10rem;
+
+    @media screen and (max-width:1200px) {
+        margin-bottom: 7rem;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 1.9rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.price__list {
+    display: flex;
+    align-items: stretch;
+    padding: 0 10rem;
+
+    @media screen and (max-width:1200px) {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 7rem;
+    }
+
+    @media screen and (max-width:767px) {
+        gap: 5rem;
+    }
+}
+
+.card {
+    position: relative;
+    width: calc(100% / 3);
+    background-color: #ffffff;
+    color: var(--dark-color);
+    border-radius: 2rem;
+    border: .2rem solid var(--accent-color);
+    padding: 2rem 0;
+
+    &:nth-child(2n) {
+        transform: scale(1.07);
+        z-index: 1;
+        border-color: #027c1a;
+
+        @media screen and (max-width:1200px) {
+            transform: scale(1);
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+    }
+}
+
+.card__uptitle {
+    position: absolute;
+    top: -2.4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    padding: .3rem 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card__image {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.card__subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #8a8888;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.card__sale_wrapper {
+    text-align: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 100%;
+        border-top: .1rem dashed #00000058;
+        z-index: 0;
+    }
+}
+
+.card__sale {
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #e49711;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.card__price_old {
+    position: relative;
+    color: #e01515;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 1.8rem;
+        left: 11.5rem;
+        background-color: #e01515;
+        width: 8rem;
+        height: .2rem;
+        transform: rotate(-10deg);
+    }
+}
+
+.card__price_new {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card__delivery_wrapper {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 100%;
+        border-top: .1rem dashed var(--accent-color);
+        z-index: 0;
+    }
+}
+
+.card__delivery {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    padding: .8rem 1.2rem;
+    border-radius: 1rem;
+    line-height: 1;
+    z-index: 1;
+}
+
+.card__save {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.card__buy_wrapper {
+    padding: 0 2rem;
+}
+
+.card__buy {
+    padding: 1.3rem 0;
+    width: 100%;
+    text-align: center;
+    background-color: #027c1a;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+
+    transition-duration: 300ms;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}

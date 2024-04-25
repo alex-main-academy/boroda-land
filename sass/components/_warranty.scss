@@ -1,0 +1,111 @@
+.warranty {
+    padding: 8rem 0;
+
+    background-image: linear-gradient(to left, #ffffff8e, #ffffffb9), url(../img/warranty-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+
+    @media screen and (max-width:1200px) {
+        padding: 6rem 0;
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 5rem 0;
+    }
+}
+
+.warranty__title {
+    margin-bottom: 5rem;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.warranty__content {
+    color: var(--dark-color);
+    background-color: #96969618;
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+
+    @media screen and (max-width:1200px) {
+        flex-direction: column;
+        padding: 3rem;
+    }
+}
+
+.warranty__subtitle {
+    display: inline-block;
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        width: 100%;
+        border-top: .1rem solid;
+        border-image: linear-gradient(to right, transparent, var(--accent-color), transparent) 1;
+    }
+
+    @media screen and (max-width:1200px) {
+        text-align: center;
+        font-size: 2.2rem;
+        display: block;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 1.8rem;
+    }
+}
+
+.warranty__desc_top {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    max-width: 50rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+
+    @media screen and (max-width:1200px) {
+        margin: 0 auto 2rem auto;
+        text-align: center;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 1.5rem;
+    }
+}
+
+.warranty__desc {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    @media screen and (max-width:1200px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 1.4rem;
+    }
+}
+
+.warranty__desc+.warranty__desc {
+    margin-top: 1.5rem;
+
+    @media screen and (max-width:1200px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 1.4rem;
+    }
+}

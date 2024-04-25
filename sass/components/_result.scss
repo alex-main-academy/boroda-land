@@ -1,0 +1,114 @@
+.result {
+    position: relative;
+    padding: 8rem 0;
+
+    background-image: url(../img/result-bg.png);
+    background-repeat: no-repeat;
+    background-size: 60rem;
+    background-position: top right -15rem;
+
+    @media screen and (max-width:1200px) {
+        background-image: none;
+        padding: 5rem 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10rem;
+        left: -10rem;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        background-color: #3d7fc6a2;
+        filter: blur(8rem);
+
+        @media screen and (max-width:1200px) {
+            display: none;
+        }
+    }
+}
+
+.result__title {
+    margin-bottom: 5rem;
+
+    @media screen and (max-width:1200px) {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.result__list {
+    background-color: #3d7fc6e5;
+    border-radius: 2.5rem;
+    padding: 3rem 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width:1200px) {
+        flex-wrap: wrap;
+        column-gap: 5rem;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+}
+
+.result__images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1.5rem;
+        width: 100%;
+        border-top: .1rem solid;
+        border-image: linear-gradient(to right, transparent, #FFFFFF, transparent) 1;
+    }
+}
+
+.result__image {
+    width: 15rem;
+
+    @media screen and (max-width:1200px) {
+        width: 13.5rem;
+    }
+}
+
+.result__image_left {
+    transform: rotate(-8deg);
+}
+
+.result__image_right {
+    transform: rotate(5deg);
+    margin-left: -1rem;
+}
+
+.result__name {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.result__year {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.result__medicine {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.result__link_wrapper {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.result__link {
+    color: #FFFFFF;
+}

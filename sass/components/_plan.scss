@@ -1,0 +1,76 @@
+.plan {
+    background-image: linear-gradient(to left, #04111ff0, #04111fc3), url(../img/plan-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    border-top: 1rem solid var(--accent-color);
+
+    padding: 8rem 0;
+
+    @media screen and (max-width:1200px) {
+        padding: 6rem 0;
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 5rem 0;
+        border-top-width: .7rem;
+    }
+}
+
+.plan__title {
+    max-width: 50rem;
+    margin-bottom: 5rem;
+}
+
+.plan__list {
+    display: flex;
+    align-items: stretch;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:1200px) {
+        gap: 2.5rem;
+    }
+}
+
+.plan__item {
+    width: calc((100% - 10rem) / 3);
+
+    @media screen and (max-width:1200px) {
+        width: calc((100% - 5rem) / 3);
+    }
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+    }
+}
+
+.plan__image {
+    display: block;
+    margin: 0 auto 2rem auto;
+
+    @media screen and (max-width:1200px) {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+.plan__desc {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.6;
+
+    @media screen and (max-width:1200px) {
+        font-size: 1.5rem;
+    }
+}
+
+.plan__link_wrapper {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.plan__link {
+    color: #FFFFFF;
+}
